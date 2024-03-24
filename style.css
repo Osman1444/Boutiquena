@@ -56,7 +56,7 @@ p {
 
 
 #Collection{
-    height: 100vh;
+    /* height: 100vh; */
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     font-optical-sizing: 40px;
     font-weight: 200;
@@ -101,4 +101,12 @@ p {
     top: 220px;
     color: #fff;
     z-index: 1;
+}
+
+.SizeChart{
+    margin-top: 7.5rem;
+}
+.SizeChart img{
+    margin-top: 4rem;
+    width: 400px;
 }
