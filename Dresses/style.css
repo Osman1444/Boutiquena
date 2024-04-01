@@ -13,18 +13,11 @@ body {
     font-family: "Ubuntu", sans-serif;
 }
 
-.nav{
-    background-image: url('Source/Background.jpg');
-    height: 100vh;
-    width: 100%;
-    background-size: cover;
-    /* filter: brightness(0.5); */
-}
-
 nav{
     background-color: #fff;
-    height: 30vh;
+    height: 26vh;
     width: 100%;
+    border-bottom: 1px solid #555;
 }
 
 .title {
@@ -77,9 +70,13 @@ p {
 }
 
 #Collection section div:hover::before {
-    background-size: 120%;
-    background-position: 30% 30%;
-    filter: brightness(0.5);
+    background-size: 105%;
+    background-position: 10% 10%;
+    filter: brightness(0.65);
+}
+
+#Collection section :nth-child(2):hover::before {
+    background-size: 130%;
 }
 
 #Collection section div::before {
@@ -94,20 +91,33 @@ p {
     transition: 0.5s;
 }
 
-#Collection section div span {
-    font-family: "Ubuntu", sans-serif;
+#Collection section div a {
     font-size: 1.5rem;
     font-weight: 500;
     position: absolute;
-    right: 115px;
-    top: 220px;
+    left: 25px;
+    bottom: 40px;
+    color: #fff;
+    z-index: 1;
+    text-decoration: none;
+}
+#Collection section div span {
+    font-size: 1.25rem;
+    font-weight: 300;
+    position: absolute;
+    left: 25px;
+    bottom: 20px;
     color: #fff;
     z-index: 1;
 }
 
-.SizeChart{
-    margin-top: 7.5rem;
+.sort{
+    position: relative;
+    right: 25%;
 }
-.SizeChart img{
-    width: 400px;
+select{
+    border: 0;
+    outline: none;
+    font-weight: normal;
+    font-size: 16px;
 }
